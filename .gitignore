@@ -1,0 +1,34 @@
+# Dart / Flutter generated files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# IDE and OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local CMS credentials and signing secrets
+cms.json
+android/key.properties
+key.properties
+*.jks
+*.keystore
+upload-keystore.*
+
+# Firebase local config (if Firebase Hosting is used)
+.firebase/
+
+# Private CMS configuration
+cms.json
+
+# Android signing credentials
+android/key.properties
+*.jks
+*.keystore

@@ -1,0 +1,24 @@
+THIS IS THE RECOVERED CICT ORG FAIR PROJECT FOR UNIT 8.
+It is NOT the separate My Profile / My Shelf Unit 7 Exercise.
+
+1. Extract this folder to a normal writable location, e.g. Downloads\cict_org_fair_unit8.
+2. Open the folder in VS Code.
+3. In the VS Code terminal run:
+     flutter create --platforms=web,android .
+     flutter pub get
+4. Create cms.json by copying cms.example.json and filling your own Contentful read-only Delivery API token.
+5. Run:
+     flutter run --dart-define-from-file=cms.json
+6. Apply the Unit 8 platform names + permission:
+     powershell -ExecutionPolicy Bypass -File .\scripts\finish-unit8-platforms.ps1
+7. Run:
+     flutter analyze
+     flutter test
+8. Read README.md and UNIT8_ANSWERS_TEMPLATE.md for deployment, GitHub Actions, Android signing, and report steps.
+
+The original recovered Unit 7 archive did not include pubspec.yaml, web/, or android/.
+This recovered project supplies pubspec.yaml and scripts; Flutter generates the platform
+folders on your own machine using your installed SDK.
+
+Never commit cms.json, android/key.properties, or any keystore file.
+Do not put private credentials or keystore passwords in screenshots shared publicly.

@@ -1,0 +1,30 @@
+# Unit 8 Android signing configuration for android/app/build.gradle.kts
+# Follow the assignment: add the imports at the very top of build.gradle.kts.
+
+import java.io.FileInputStream
+import java.util.Properties
+
+# Add this block after the plugins { ... } block and before android { ... }:
+
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+
+# Add the following inside the existing android { ... } block, before buildTypes { ... }:
+
+signingConfigs {
+    create("release") {
+        keyAlias = keystoreProperties["keyAlias"] as String
+        keyPassword = keystoreProperties["keyPassword"] as String
+        storeFile = keystoreProperties["storeFile"]?.let { file(it as String) }
+        storePassword = keystoreProperties["storePassword"] as String
+    }
+}
+
+# Then, inside buildTypes { release { ... } }, set:
+
+signingConfig = signingConfigs.getByName("release")
+
+# Do not commit android/key.properties or the .jks keystore.
