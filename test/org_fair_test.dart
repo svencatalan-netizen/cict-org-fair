@@ -1,6 +1,6 @@
 // Part 2 (Unit 6) features. These pass from the start: if one fails,
 // something you changed in Part 3 broke Part 2.
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:org_fair/screens/about_screen.dart';
 import 'package:org_fair/widgets/org_tile.dart';

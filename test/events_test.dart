@@ -1,6 +1,6 @@
 // Part 3 tests for everyone, whichever CMS you chose. Run: flutter test
 // Each test names the TODOs it checks.
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:org_fair/data/event_repository.dart';

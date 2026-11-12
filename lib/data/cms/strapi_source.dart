@@ -34,10 +34,7 @@ class StrapiEventSource implements EventSource {
   Future<List<FairEvent>> fetchEvents() async {
     final base = baseUrl.replaceFirst(RegExp(r'/+$'), '');
     final uri = Uri.parse('$base/api/fair-events').replace(
-      queryParameters: {
-        'sort': 'startsAt:asc',
-        'pagination[pageSize]': '100',
-      },
+      queryParameters: {'sort': 'startsAt:asc', 'pagination[pageSize]': '100'},
     );
     final headers = <String, String>{};
     if (token.isNotEmpty) {

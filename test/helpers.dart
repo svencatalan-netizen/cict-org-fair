@@ -1,5 +1,5 @@
 // Shared by the tests. Not a test file itself.
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:org_fair/data/event_repository.dart';
 import 'package:org_fair/data/event_source.dart';

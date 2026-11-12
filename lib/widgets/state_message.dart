@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// One layout for the loading, error, empty and no-results messages,
 /// so all four states of content look consistent.

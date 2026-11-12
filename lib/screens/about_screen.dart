@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 /// Opened by name from the drawer: Navigator.pushNamed(context, '/about').
@@ -80,7 +80,6 @@ class AboutScreen extends StatelessWidget {
     );
   }
 }
-
 
 /// Displays the version and build number from the installed app metadata.
 /// On web, package_info_plus reads the generated build/web/version.json file.

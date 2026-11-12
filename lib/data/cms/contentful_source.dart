@@ -41,11 +41,7 @@ class ContentfulEventSource implements EventSource {
     final uri = Uri.https(
       'cdn.contentful.com',
       '/spaces/$spaceId/environments/$environment/entries',
-      {
-        'content_type': 'fairEvent',
-        'order': 'fields.startsAt',
-        'limit': '100',
-      },
+      {'content_type': 'fairEvent', 'order': 'fields.startsAt', 'limit': '100'},
     );
     final headers = <String, String>{'Authorization': 'Bearer $token'};
     // EXPLAIN E3: Open one of the other two CMS files and compare. Which
